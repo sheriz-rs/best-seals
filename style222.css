@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1200px;   /* Fixed width */
+    height: 800px;   /* Fixed height */
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.project-title {
+    font-size: 24px; /* Adjusted title font size */
+    margin-bottom: 10px;
+}
+
+.location {
+    font-size: 16px; /* Adjusted location font size */
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 120px); /* To make sure the body fills remaining space */
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.images img {
+    width: 23%; /* Adjusted to fit 4 images */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+.videos {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+video {
+    width: 48%; /* Adjusted to fit 2 videos side by side */
+    height: auto;
+    border-radius: 5px;
+}
